@@ -13,7 +13,7 @@ if st.button("🚀 啟動全方位分析"):
         st.error("請輸入 Key")
     else:
         headers = {'x-rapidapi-host': "v3.football.api-sports.io", 'x-rapidapi-key': api_key}
-        url = "https://v3.football.api-sports.io/fixtures?live=all"
+        url = "https://v3.football.api-sports.io/fixtures?date=2026-04-03"
         
         try:
             res = requests.get(url, headers=headers).json()
